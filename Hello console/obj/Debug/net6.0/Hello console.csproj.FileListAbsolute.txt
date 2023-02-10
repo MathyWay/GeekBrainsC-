@@ -1,0 +1,15 @@
+C:\GeekBrains\C#\Hello console\bin\Debug\net6.0\Hello console.exe
+C:\GeekBrains\C#\Hello console\bin\Debug\net6.0\Hello console.deps.json
+C:\GeekBrains\C#\Hello console\bin\Debug\net6.0\Hello console.runtimeconfig.json
+C:\GeekBrains\C#\Hello console\bin\Debug\net6.0\Hello console.dll
+C:\GeekBrains\C#\Hello console\bin\Debug\net6.0\Hello console.pdb
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\Hello console.csproj.AssemblyReference.cache
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\Hello console.GeneratedMSBuildEditorConfig.editorconfig
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\Hello console.AssemblyInfoInputs.cache
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\Hello console.AssemblyInfo.cs
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\Hello console.csproj.CoreCompileInputs.cache
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\Hello console.dll
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\refint\Hello console.dll
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\Hello console.pdb
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\Hello console.genruntimeconfig.cache
+C:\GeekBrains\C#\Hello console\obj\Debug\net6.0\ref\Hello console.dll
