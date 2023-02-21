@@ -21,4 +21,4 @@ Console.WriteLine(GetRange(a));
 string number;
 Console.Write("Введите число: ");
 number = Console.ReadLine();
-Console.WriteLine(number.Length);
+Console.WriteLine($"{number.Length}");
