@@ -24,21 +24,31 @@ void PrintArray(int[,] inputArray)
     }
 }
 
-void PrintAverageInColumn(int[,] inputArray)
+int GetMinimumRowIndex(int[,] inputArray)
 {
+    double min = 0;
     double count = 0;
-    Console.Write("(");
-    for (int j = 0; j < inputArray.GetLength(1); j++)
+    int index = 1;
+    foreach (var item in inputArray)
     {
-        for (int i = 0; i < inputArray.GetLength(0); i++)
+        min += item;
+    }
+    for (int i = 0; i < inputArray.GetLength(0); i++)
+    {
+        for (int j = 0; j < inputArray.GetLength(1); j++)
         {
             count += inputArray[i, j];
         }
-        Console.Write($"{count/inputArray.GetLength(0)}" + ((j != inputArray.GetLength(1) - 1) ? "; " : ")"));
+        if(count < min)
+        {
+            min = count;
+            index = i + 1;
+        }
         count = 0;
     }
-    Console.WriteLine("");
+    return index;
 }
+int minimumRow = 0;
 
 Console.WriteLine("Введите кол-во строк в двумерном массиве");
 int rows = Convert.ToInt32(Console.ReadLine());
@@ -54,4 +64,6 @@ PrintArray(array);
 
 Console.WriteLine("");
 
-PrintAverageInColumn(array);
+minimumRow = GetMinimumRowIndex(array);
+
+Console.WriteLine($"{minimumRow}");

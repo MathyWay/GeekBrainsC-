@@ -24,20 +24,23 @@ void PrintArray(int[,] inputArray)
     }
 }
 
-void PrintAverageInColumn(int[,] inputArray)
+int[,] SortArray(int[,] inputArray)
 {
-    double count = 0;
-    Console.Write("(");
-    for (int j = 0; j < inputArray.GetLength(1); j++)
+    int[,] resultArray = new int[inputArray.GetLength(0), inputArray.GetLength(1)];
+    int[] sortArray = new int[inputArray.GetLength(1)];
+    for (int i = 0; i < inputArray.GetLength(0); i++)
     {
-        for (int i = 0; i < inputArray.GetLength(0); i++)
+        for (int j = 0; j < inputArray.GetLength(1); j++)
         {
-            count += inputArray[i, j];
+            sortArray[j]= inputArray[i, j];
         }
-        Console.Write($"{count/inputArray.GetLength(0)}" + ((j != inputArray.GetLength(1) - 1) ? "; " : ")"));
-        count = 0;
+        Array.Sort(sortArray);
+        for (int k = 0; k < inputArray.GetLength(1); k++)
+        {
+            inputArray[i, k] = sortArray[sortArray.Length-1-k];
+        }
     }
-    Console.WriteLine("");
+    return inputArray;
 }
 
 Console.WriteLine("Введите кол-во строк в двумерном массиве");
@@ -54,4 +57,6 @@ PrintArray(array);
 
 Console.WriteLine("");
 
-PrintAverageInColumn(array);
+array = SortArray(array);
+
+PrintArray(array);
